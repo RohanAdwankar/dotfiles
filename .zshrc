@@ -34,3 +34,4 @@ export NVM_DIR="$HOME/.nvm"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias vi='~/nvim-macos-arm64/bin/nvim'
 alias sot=~/bin/stream
+alias gitt='git log --oneline --graph --all'
