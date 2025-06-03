@@ -1,17 +1,3 @@
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/rohanadwankar/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/rohanadwankar/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/rohanadwankar/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/rohanadwankar/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 export PATH="$HOME/.local/bin:$PATH"
 [ -f "/Users/rohanadwankar/.ghcup/env" ] && . "/Users/rohanadwankar/.ghcup/env" # ghcup-env
 alias emacs='emacs -nw'
@@ -35,3 +21,8 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias vi='~/nvim-macos-arm64/bin/nvim'
 alias sot=~/bin/stream
 alias gitt='git log --oneline --graph --all'
+alias python='~/.local/bin/python3.13'
+alias python3='~/.local/bin/python3.13'
+export PATH="$HOME/go/bin:$PATH"
+export JAVA_HOME=/Library/java8home
+export PATH="$JAVA_HOME/bin:$PATH"
