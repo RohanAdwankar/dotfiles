@@ -26,3 +26,4 @@ alias python3='~/.local/bin/python3.13'
 export PATH="$HOME/go/bin:$PATH"
 export JAVA_HOME=/Library/java8home
 export PATH="$JAVA_HOME/bin:$PATH"
+alias ls='ls -alFh'
