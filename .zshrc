@@ -37,3 +37,4 @@ esac
 alias dub='docker run -it ubuntu bash'
 alias rg='rg -i'
 alias n='~/newt/target/debug/newts'
+alias s='vi $(mktemp -p ~/scratch)'
