@@ -1,3 +1,4 @@
+PROMPT='[%D{%H:%M:%S}] '$PROMPT
 export PATH="$HOME/.local/bin:$PATH"
 [ -f "/Users/rohanadwankar/.ghcup/env" ] && . "/Users/rohanadwankar/.ghcup/env" # ghcup-env
 alias emacs='emacs -nw'
@@ -38,3 +39,4 @@ alias dub='docker run -it ubuntu bash'
 alias rg='rg -i'
 alias n='~/newt/target/debug/newts'
 alias s='vi $(mktemp -p ~/scratch)'
+alias gh='github .'
