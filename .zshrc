@@ -27,7 +27,8 @@ alias python3='~/.local/bin/python3.13'
 export PATH="$HOME/go/bin:$PATH"
 export JAVA_HOME=/Library/java8home
 export PATH="$JAVA_HOME/bin:$PATH"
-alias ls='ls -ltr | tail -n +2 | awk '\''{ if ($3 == "rohanadwankar" && $4 == "staff") { $3=$4=""; print $0 } else { print "ATTENTION: " $0 } }'\''| column -t'
+# alias ls='ls -ltr | tail -n +2 | awk '\''{ if ($3 == "rohanadwankar" && $4 == "staff") { $3=$4=""; print $0 } else { print "ATTENTION: " $0 } }'\''| column -t'
+alias ls='ls -ltr'
 # pnpm
 export PNPM_HOME="/Users/rohanadwankar/Library/pnpm"
 case ":$PATH:" in
