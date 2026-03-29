@@ -43,3 +43,12 @@ alias s='vi $(mktemp -p ~/scratch)'
 alias gh='github .'
 alias rm='trash'
 export HISTSIZE=10000
+
+cargo() {
+  if [ "$1" = "init" ]; then
+    shift
+    ~/rohanrust/cargo-init-rohan "$@"
+  else
+    command cargo "$@"
+  fi
+}
