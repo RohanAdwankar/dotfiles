@@ -28,7 +28,7 @@ export PATH="$HOME/go/bin:$PATH"
 export JAVA_HOME=/Library/java8home
 export PATH="$JAVA_HOME/bin:$PATH"
 # alias ls='ls -ltr | tail -n +2 | awk '\''{ if ($3 == "rohanadwankar" && $4 == "staff") { $3=$4=""; print $0 } else { print "ATTENTION: " $0 } }'\''| column -t'
-alias ls='ls -ltr'
+alias ls='ls -ltra'
 # pnpm
 export PNPM_HOME="/Users/rohanadwankar/Library/pnpm"
 case ":$PATH:" in
@@ -37,8 +37,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 alias dub='docker run -it ubuntu bash'
-alias rg='rga -in'
+alias rg='rga -Sn'
 alias n='~/newt/target/debug/newts'
 alias s='vi $(mktemp -p ~/scratch)'
 alias gh='github .'
 alias rm='trash'
+export HISTSIZE=10000
