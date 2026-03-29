@@ -43,6 +43,7 @@ alias s='vi $(mktemp -p ~/scratch)'
 alias gh='github .'
 alias rm='trash'
 export HISTSIZE=10000
+[ -f "$HOME/.config/zsh/secrets.zsh" ] && source "$HOME/.config/zsh/secrets.zsh"
 
 cargo() {
   if [ "$1" = "init" ]; then
