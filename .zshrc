@@ -48,7 +48,7 @@ export HISTSIZE=10000
 cargo() {
   if [ "$1" = "init" ]; then
     shift
-    ~/rohanrust/cargo-init-rohan "$@"
+    ~/rohanrust/target/release/cargo-init-rohan "$@"
   else
     command cargo "$@"
   fi
