@@ -37,6 +37,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 alias dub='docker run -it ubuntu bash'
+alias codex='codex --yolo'
 alias rg='rga -Sn'
 alias n='~/newt/target/debug/newts'
 alias s='vi $(mktemp -p ~/scratch)'
