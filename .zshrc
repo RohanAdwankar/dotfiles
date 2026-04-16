@@ -1,4 +1,7 @@
 PROMPT='[%D{%H:%M:%S}] '$PROMPT
+autoload -Uz compinit
+compinit
+
 export PATH="$HOME/.local/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -26,6 +29,9 @@ alias gh='github .'
 alias rm='trash'
 export HISTSIZE=10000
 [ -f "$HOME/.config/zsh/secrets.zsh" ] && source "$HOME/.config/zsh/secrets.zsh"
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' menu select
+
 cargo() {
   if [ "$1" = "init" ]; then
     shift
