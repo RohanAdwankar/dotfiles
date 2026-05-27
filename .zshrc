@@ -25,8 +25,8 @@ alias codex='codex --yolo'
 alias rg='rg -Sn'
 alias n='~/newt/target/debug/newts'
 alias s='vi $(mktemp -p ~/scratch)'
-alias gh='github .'
 alias rm='trash'
+alias check='git add . && git commit -m "checkpoint"'
 export HISTSIZE=10000
 [ -f "$HOME/.config/zsh/secrets.zsh" ] && source "$HOME/.config/zsh/secrets.zsh"
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
