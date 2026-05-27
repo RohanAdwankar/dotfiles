@@ -1,4 +1,6 @@
-PROMPT='[%D{%H:%M:%S}] '$PROMPT
+timestamp_prompt='[%D{%H:%M:%S}] '
+[[ $PROMPT == $timestamp_prompt* ]] || PROMPT="$timestamp_prompt$PROMPT"
+unset timestamp_prompt
 autoload -Uz compinit
 compinit
 
