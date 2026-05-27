@@ -43,3 +43,4 @@ cargo() {
   fi
 }
 export PATH="$HOME/.cargo/bin:$PATH"
+set -a; source "/Users/radwankar/bridge/.env"; set +a
