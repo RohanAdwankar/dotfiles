@@ -22,7 +22,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 alias codex='codex --yolo'
-alias rg='rga -Sn'
+alias rg='rg -Sn'
 alias n='~/newt/target/debug/newts'
 alias s='vi $(mktemp -p ~/scratch)'
 alias gh='github .'
