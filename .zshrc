@@ -9,7 +9,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias vi='~/nvim-macos-arm64/bin/nvim'
+alias vi='/opt/homebrew/bin/nvim'
 alias sot=~/bin/stream
 alias gitt='git log --oneline --graph --all'
 alias python='~/.local/bin/python3.13'
@@ -42,3 +42,4 @@ cargo() {
     command cargo "$@"
   fi
 }
+export PATH="$HOME/.cargo/bin:$PATH"
